@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Ball Bouncer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-board">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="high-score">Best: <span id="highScore">0</span></div>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div class="game-over" id="gameOver">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+        
+        <div class="controls">
+            <div class="controls-title">HOW TO PLAY</div>
+            <div class="control-item">
+                <span class="control-icon">⌨️</span>
+                <span class="control-text">Use Arrow Keys ← → or A/D to move</span>
+            </div>
+            <div class="control-item good">
+                <span class="control-icon">🟢</span>
+                <span class="control-text">Catch GREEN balls = +10 points</span>
+            </div>
+            <div class="control-item bad">
+                <span class="control-icon">🔴</span>
+                <span class="control-text">Avoid RED balls = Game Over!</span>
+            </div>
+            <div class="control-item warning">
+                <span class="control-icon">⚠️</span>
+                <span class="control-text">Miss green balls = -5 points</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
